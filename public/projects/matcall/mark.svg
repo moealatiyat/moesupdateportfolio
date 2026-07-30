@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Mark only, transparent background — source of truth for icon generation
+       (scripts/generate-icons.js recolors this for the monochrome variant). -->
+  <polygon points="91.4,70.5 73,88.9 47,88.9 28.6,70.5 28.6,44.5 47,26.1 73,26.1 91.4,44.5"
+    fill="none" stroke="#E5484D" stroke-width="6" stroke-linejoin="round"/>
+  <g stroke="#F5F5F7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="45" cy="44" r="4.5" fill="#F5F5F7" stroke="none"/>
+    <path d="M45 49 L43 61"/>
+    <path d="M44.5 51 L59 47.5"/>
+    <path d="M44.5 51 L39.5 55 L41 49"/>
+    <path d="M43 61 L48 67 L51 74"/>
+    <path d="M43 61 L38 67 L33 74"/>
+  </g>
+  <g stroke="#FF6B70" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="75" cy="44" r="4.5" fill="#FF6B70" stroke="none"/>
+    <path d="M75 49 L77 61"/>
+    <path d="M75.5 51 L61 53"/>
+    <path d="M75.5 51 L80.5 55 L79 49"/>
+    <path d="M77 61 L72 67 L69 74"/>
+    <path d="M77 61 L82 67 L87 74"/>
+  </g>
+</svg>

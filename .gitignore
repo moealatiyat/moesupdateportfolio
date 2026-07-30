@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# local safety-net copy of the pre-redesign build, not part of the site
+_backup-slideshow-version/
+
+.DS_Store
+.env
+.env.local
+
+# contains a live API key for the 21st MCP server — do not commit
+.mcp.json
+
+# personal Claude Code tool permissions, not project config
+.claude/settings.local.json

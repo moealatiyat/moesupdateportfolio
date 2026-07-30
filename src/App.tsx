@@ -197,19 +197,6 @@ function WayneMap() {
       <circle cx="635" cy="294" r="4" fill="#ffffff" opacity="0.9" />
       <circle cx="635" cy="294" r="2" fill="#ffffff" />
 
-      {/* "Wayne, NJ" label */}
-      <text
-        x="648"
-        y="287"
-        fill="#ffffff"
-        opacity="0.45"
-        fontSize="10"
-        fontFamily="'DM Mono', monospace"
-        letterSpacing="0.12em"
-      >
-        WAYNE, NJ
-      </text>
-
       {/* Coordinate labels — subtle editorial touch */}
       <text x="18" y="588" fill="#282828" fontSize="9" fontFamily="monospace" letterSpacing="0.06em">
         40.9279° N  74.2554° W
@@ -328,6 +315,23 @@ function Hero() {
 
       {/* Content */}
       <div className="relative z-20 px-6 flex flex-col items-center text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.1, ease: [0.22, 0.03, 0.26, 1] }}
+          className="w-40 h-40 sm:w-48 sm:h-48 mb-5"
+        >
+          <img
+            src="/headshot.jpg"
+            alt="Mohammad Alatiyat"
+            className="w-full h-full object-cover grayscale"
+            style={{
+              maskImage: "radial-gradient(circle, black 58%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(circle, black 58%, transparent 82%)",
+            }}
+          />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}

@@ -2,6 +2,9 @@ node_modules
 dist
 dist-ssr
 *.local
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
 
 # local safety-net copy of the pre-redesign build, not part of the site
 _backup-slideshow-version/

@@ -12,6 +12,7 @@ import {
   ArrowUpRight,
   ExternalLink,
   X,
+  type LucideIcon,
 } from "lucide-react";
 import { AnimatePresence, motion, useInView } from "motion/react";
 
@@ -290,7 +291,7 @@ function SocialBtn({
   label,
 }: {
   href: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   label: string;
 }) {
   return (

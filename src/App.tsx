@@ -316,23 +316,6 @@ function Hero() {
       {/* Content */}
       <div className="relative z-20 px-6 flex flex-col items-center text-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.1, ease: [0.22, 0.03, 0.26, 1] }}
-          className="w-40 h-40 sm:w-48 sm:h-48 mb-5"
-        >
-          <img
-            src="/headshot.jpg"
-            alt="Mohammad Alatiyat"
-            className="w-full h-full object-cover grayscale"
-            style={{
-              maskImage: "radial-gradient(circle, black 58%, transparent 82%)",
-              WebkitMaskImage: "radial-gradient(circle, black 58%, transparent 82%)",
-            }}
-          />
-        </motion.div>
-
-        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 0.03, 0.26, 1] }}
@@ -911,9 +894,14 @@ function Nav() {
       {/* Name mark */}
       <a
         href="#"
-        className="font-black text-sm tracking-tight text-white/50 hover:text-white transition-colors duration-300 leading-none"
+        aria-label="Home"
+        className="block w-9 h-9 rounded-full overflow-hidden border border-white/15 hover:border-white/50 transition-colors duration-300"
       >
-        {NAME_FIRST[0]}{NAME_LAST[0]}
+        <img
+          src="/headshot.jpg"
+          alt=""
+          className="w-full h-full object-cover grayscale"
+        />
       </a>
 
       {/* Links */}
